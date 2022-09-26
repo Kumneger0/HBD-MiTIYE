@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>HBD Mitiye</title>
+    <link rel="stylesheet" href="./aos/aos.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="style.css" title="" type="" />
+  </head>
+  <body>
+<section class="wrapper">
+ <div class="container">
+   <h1 class="hbd" data-aos = "fade-down"
+   data-aos-delay = "500"
+   >Happy Birth Day Mitiye</h1>
+ </div>
+ <div class="images">
+   <div data-aos = "fade-right" class="firstImg">
+     <img src="./images/mitiye.jpg" alt="" />
+   </div>
+   <div data-aos = "fade-left" class="secondImg">
+     <img src="./images/mitiye2.jpg" alt="" />
+   </div>
+   <div data-aos = "zoom-in" class="ThirdImage">
+     <img  src="./images/myLove.jpg" alt="" />
+   </div>
+   <div data-aos = "fade-right" class="fourthImage">
+     <img src="./images/mitiye3.jpg" alt="" />
+   </div>
+   <div data-aos = "fade-left" class="fifthImage">
+     <img src="./images/mitiye4.jpeg" alt="" />
+   </div>
+ </div>
+ <div class="wishContainer">
+ <div class="wishes">
+   <div
+   data-aos = "fade-right"
+   data-aos-delay = "500"
+   data-aos-duration = "2000"
+   class="wish">
+Happy birthday! I hope all your birthday wishes and dreams come true.”
+   </div>
+      
+<div
+   data-aos = "fade-left"
+   data-aos-delay = "500"
+   data-aos-duration = "2000"
+   class="wish">
+Wishing you a day filled with happiness and a year filled with joy. Happy birthday!
+   </div>
+<div
+   data-aos = "fade-right"
+   data-aos-delay = "500"
+   data-aos-duration = "2000"
+   class="wish">
+    I hope that today, at your party, you dance and others sing as you celebrate with joy your best birthday
+   </div>
+<div
+   data-aos = "fade-left"
+   data-aos-delay = "500"
+   data-aos-duration = "2000"
+   class="wish">
+May you be gifted with life’s biggest joys and never-ending bliss. After all, you yourself are a gift to earth, so you deserve the best. Happy birthday.
+   </div>
+<div
+   data-aos = "fade-right"
+   data-aos-delay = "500"
+   data-aos-duration = "2000"
+   class="wish">
+On this wonderful day, I wish you the best that life has to offer! Happy birthday!
+   </div>
+<div
+   data-aos = "fade-left"
+   data-aos-delay = "500"
+   data-aos-duration = "2000"
+   class="wish">
+     
+Happy birthday to someone who is forever young!
+     
+   </div>
+ </div>
+ </div>
+ <footer class="footer">
+   <div class="lastMessage">
+    It’s always a treat to wish happy birthday to someone so sweet
+   </div>
+ </footer>
+</section>
+    <script src = "./aos/aos.js"></script>
+    <script>
+    const msgForLarge = `<h1 style = "width:100%; text-align:center">Pleaese use small screen device please</h1>`
+    checkScreenWidth()
+  function checkScreenWidth(){
+  
+    if(innerWidth < 600) return
+    document.body.innerHTML = msgForLarge
+  }
+  
+  window.addEventListener("resize", ()=>{
+    checkScreenWidth()
+  })
+  
+  
+   const imageDivs =  document.querySelectorAll(".images div")
+   imageDivs.forEach(div => {
+     div.setAttribute("data-aos-delay", "1000")
+     div.setAttribute("data-aos-duration", "2500")
+   })
+      AOS.init()
+      </script>
+  </body>
+</html>
